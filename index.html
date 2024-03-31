@@ -3,29 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blackjack de 3 pesos</title>
+    <title>Blackjack</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="info">
-            <h1 class="title">BLACKJACK DE 2 PESOS</h1>
-            <p>aca un blackjack todo miado pq tengo tiempo libre de sobra xd</p>
-        </div>
-        <div class="table">
-            <div id="dealer" class="dealerArea">
-                
-            </div>
-            <div class="tableInscription">DEALER STANDS ON 17</div>
-            <div class="userArea">
-                <div id="userCards"></div>
-                <div class="buttons">
-                    <button onclick="Hit()">HIT</button>
-                    <button id="stand">STAND</button>
-                </div>
-            </div>        
-        </div>
+    <h2>Dealer Cards</h2>
+    <p id="dealerTotal">Total: 0</p>
+    <div id="dealer">
     </div>
-    <script src="script.js"></script>♦
+    <h2>Your Cards</h2>
+    <p id="userTotal">Total: 0</p>
+    <div id="userCards">
+    </div>
+    <button id="hit">Hit</button>
+    <button id="stand">Stand</button>
+    <p id="result"></p>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

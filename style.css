@@ -1,72 +1,85 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-image: radial-gradient(#222, #444);
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    margin: 0 auto;
 }
 
 .container {
-    width: 100%;
-    height: 100%;
     text-align: center;
-}
-
-.info {
-    color: #fff;
-}
-
-.table {
-    margin: 0 auto;
-    height: 500px;
-    width: 70%;
-    border: solid 20px #743b16;
-    background-color: #070;
-    border-radius: 5% 5% 50% 50%;
-    box-shadow: inset 0 0 15px #000;
-}
-
-.tableInscription {
+    max-width: 800px;
     margin: 20px auto;
-    font: bolder;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.red-suit {
     color: red;
-    padding: 2px;
-    background-color: rgba(139, 0, 0, 0.587);
-    width: 50%;
-    border-radius: 5px;
 }
 
-.dealerArea {
-    margin: 5% auto;
+.black-suit {
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#dealer,
+#userCards {
+    margin-bottom: 20px;
+}
+
+#dealer p,
+#userCards p {
+    padding: 4px 2px;
+    border: solid 1px #000;
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
     border-radius: 2px;
-    border: solid 1px #ffffffa0;
-    width: 50%;
 }
 
-.userArea {
-    margin: 15% auto;
-    border-radius: 2px;
-    border: solid 1px #ffffffa0;
-    width: 50%;
-    height: 120px;
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
-.userArea button {
-    background-color: #ffffffa0;
+#hit {
+    background-color: #4caf50;
+    color: white;
     border: none;
-    border-radius: 5px 0 0 5px;
-    margin-top: 30%;
-    width: 120px;
+    border-radius: 4px;
 }
 
-.userArea button:hover {
-    background-color: #fffffff0;
+#hit:hover {
+    background-color: #45a049;
 }
 
-.userArea button:last-of-type {
-    background-color: #ffffffa0;
+#stand {
+    background-color: #f44336;
+    color: white;
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 4px;
 }
 
-.userArea button:last-of-type:hover {
-    background-color: #fffffff0;
+#stand:hover {
+    background-color: #d32f2f;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#dealerTotal,
+#userTotal {
+    font-size: 18px;
+    font-weight: bold;
 }
