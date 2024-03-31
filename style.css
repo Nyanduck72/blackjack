@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(#222, #444);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.info {
+    color: #fff;
+}
+
+.table {
+    margin: 0 auto;
+    height: 500px;
+    width: 70%;
+    border: solid 20px #743b16;
+    background-color: #070;
+    border-radius: 5% 5% 50% 50%;
+    box-shadow: inset 0 0 15px #000;
+}
+
+.tableInscription {
+    margin: 20px auto;
+    font: bolder;
+    color: red;
+    padding: 2px;
+    background-color: rgba(139, 0, 0, 0.587);
+    width: 50%;
+    border-radius: 5px;
+}
+
+.dealerArea {
+    margin: 5% auto;
+    border-radius: 2px;
+    border: solid 1px #ffffffa0;
+    width: 50%;
+}
+
+.userArea {
+    margin: 15% auto;
+    border-radius: 2px;
+    border: solid 1px #ffffffa0;
+    width: 50%;
+    height: 120px;
+}
+
+.userArea button {
+    background-color: #ffffffa0;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    margin-top: 30%;
+    width: 120px;
+}
+
+.userArea button:hover {
+    background-color: #fffffff0;
+}
+
+.userArea button:last-of-type {
+    background-color: #ffffffa0;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.userArea button:last-of-type:hover {
+    background-color: #fffffff0;
+}
