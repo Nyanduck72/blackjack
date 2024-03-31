@@ -30,8 +30,6 @@ let hitButton = document.getElementById("hit");
 let standButton = document.getElementById("stand");
 let IsStanding = false;
 
-// Remaining JavaScript code here...
-
 function Refresh() {
     user_cards.innerHTML = "";
     dealer_cards.innerHTML = "";
@@ -66,8 +64,6 @@ function getSuitClass(card) {
         return "black-suit";
     }
 }
-
-// Remaining JavaScript code here...
 
 function getSuitClass(card) {
     if (card.includes("♥") || card.includes("♦")) {
