@@ -49,6 +49,12 @@ h2 {
     box-shadow: 4px 4px 2px #000;
 }
 
+.buttons {
+   position: absolute;
+   top: 72%;
+   left: 41%;
+}
+
 button {
     font-size: 16px;
     padding: 10px 20px;
@@ -87,4 +93,18 @@ button {
 #userTotal {
     font-size: 18px;
     font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .buttons {
+        width: 100%;
+        position: absolute;
+        top: 90%;
+        left: 0;
+    }
+    button {
+        display: inline;
+        width: 45%;
+        font-size: 26px;
+    }
 }
