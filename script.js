@@ -96,30 +96,29 @@ function calculateTotal(cards) {
 }
 
 function checkResult() {
-    if (userCardValue > 21 && dealerCardValue > 21) {
-        resultText.textContent = "No winner";
-        standButton.disabled = true; // Disable the stand button after player busts
-        setTimeout(() => {
-            location.reload(); // Reload the page after 2 seconds
-        }, 2000);
+    if (userCardValue == 21) {
+        resultText.textContent = "Blackjack!";
+        IsStanding = true;
+        standButton.disabled = true; // Disable the stand button after player gets 21
+        Dealer();
     } else if (userCardValue > 21) {
         resultText.textContent = "Player busts!";
         standButton.disabled = true; // Disable the stand button after player busts
         setTimeout(() => {
             location.reload(); // Reload the page after 2 seconds
-        }, 2000);
+        }, 3000);
     } else if (dealerCardValue > 21) {
         resultText.textContent = "Dealer busts!";
         standButton.disabled = true; // Disable the stand button after player busts
         setTimeout(() => {
             location.reload(); // Reload the page after 2 seconds
-        }, 2000);
+        }, 3000);
     } else {
         // No bust, continue game
         resultText.textContent = "";
     }
 
-    if ((userCardValue >= 17 && dealerCardValue >= 17) && (userCardValue <= 21 && dealerCardValue <= 21)) {
+    if ((userCardValue >= 2 && IsStanding) && (userCardValue <= 21 && dealerCardValue <= 21)) {
         userCardValue > dealerCardValue ? resultText.textContent = "Player wins!" : resultText.textContent = "Dealer wins!"
         if (dealerCardValue === userCardValue) {
             resultText.textContent = "It's a push!"
@@ -127,7 +126,7 @@ function checkResult() {
         standButton.disabled = true; // Disable the stand button after player busts
         setTimeout(() => {
             location.reload(); // Reload the page after 2 seconds
-        }, 2000);
+        }, 3000);
     }
 }
 
